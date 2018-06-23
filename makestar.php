@@ -4,8 +4,8 @@
 	**_*_**
 	*_***_*
 	*__*__*
-	*__*__*
 	*_***_*
+	**_*_**
 	*******
 */
 
@@ -15,9 +15,9 @@
 	*_*_*_*_*
 	*__***__*
 	*********
-	*___*___*
 	*__***__*
 	*_*_*_*_*
+	**__*__**
 	*********
 */
 
@@ -80,14 +80,14 @@
 	print("<br>");
 
 	// Block below
-	$belowRound = 0;
+	$belowRound = 1;
 	for($y=0; $y<$loop; $y++){
 		// first line
 		print("*");
 		
 		// left
 		for($x=$mean-2; $x>=1; $x--){
-			if($y==$mean-2){
+			if($y==$loop-1){
 				print("*");
 			}else if($x==$belowRound){
 				print("*");
@@ -101,7 +101,7 @@
 		
 		// right
 		for($x=1; $x<=$mean-2; $x++){
-			if($y==$mean-2){
+			if($y==$loop-1){
 				print("*");
 			}else if($x==$belowRound){
 				print("*");
